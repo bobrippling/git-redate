@@ -40,6 +40,9 @@ then datefmt=%ci
 fi
 
 git log -n $n --pretty=format:"$datefmt | %H | %s" > "$tmpfile"
+if test $n -eq 1
+then echo >>"$tmpfile"
+fi
 
 ${VISUAL:-${EDITOR:-vi}} "$tmpfile"
 
