@@ -1,23 +1,14 @@
 # git-redate
-### Made by [Potato Labs](http://taterlabs.com)
+### Forked from [Potato Labs](http://taterlabs.com) [Repo](https://github.com/PotatoLabs/git-redate)
 
 Change the dates of several git commits with a single command.
 
 ![alt tag](http://oi68.tinypic.com/3ud82.jpg)
 
-# Installation
+# Fork
 
-For homebrew users, you need to run `brew tap PotatoLabs/homebrew-git-redate` and then `brew install git-redate`.
-
-If you're not using homebrew, you can clone this repo and move the `git-redate` file into any folders in your $PATH. Restart your terminal afterwards and you're good to go!
+This fork removes unwanted features and simplifies the code
 
 # Usage
 
-Simply run: `git redate --commits [[number of commits to view]]`.  You'll have to force push in order for your commit history to be rewritten.
-
-To be able to edit all the commits at once add the --all option: `git redate --all`
-
-**Make sure to run this on a clean working directory otherwise it won't work.**
-
-The `--commits` (a.k.a. `-c`) argument is optional, and defaults to 5 if not provided.
-
+`git redate -N`
